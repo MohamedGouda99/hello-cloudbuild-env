@@ -21,6 +21,7 @@ steps:
   args:
   - -c
   - 'pip install flask && python test_app.py -v'
+  - 'echo hello'
 
 # This step builds the container image.
 - name: 'gcr.io/cloud-builders/docker'
